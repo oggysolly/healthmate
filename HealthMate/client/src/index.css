@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-blue-50 via-green-50 to-purple-50 min-h-screen;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-lg rounded-2xl shadow-xl border border-white/20;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-health-green to-health-blue;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-health-green to-health-blue text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-white/80 backdrop-blur-sm text-health-green rounded-xl font-semibold shadow-md hover:shadow-lg transition-all duration-300 border border-health-green/20;
+  }
+}

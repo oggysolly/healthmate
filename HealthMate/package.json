@@ -1,0 +1,20 @@
+{
+  "name": "healthmate",
+  "version": "1.0.0",
+  "description": "Full-stack MERN healthcare web application with real-time wellness alerts",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:client\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:api": "cd api && npm run dev",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd client && npm install && cd ../api && npm install",
+    "start:api": "cd api && npm start",
+    "start:client": "cd client && npm run dev"
+  },
+  "keywords": ["healthcare", "mern", "react", "mongodb"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
